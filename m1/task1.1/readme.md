@@ -1,4 +1,4 @@
-## Description of work
+## Description of implementation 
 1. Setup git: change your global configs (add name and email, setup core text
 editor):
 ```
@@ -129,4 +129,4 @@ As a result of the work, I can say that I learned the basic git commands. I unde
 
 
 ## What is DevOps? 
-The word “DevOps” is a mashup of “development’ and “operations” but it represents a set of ideas and practices much larger than those two terms alone, or together. DevOps speeds up how an idea goes from development to deployment. At its core, DevOps relies on automating routine operational tasks and standardizing environments across an app’s lifecycle
+The word “DevOps” is a mashup of “development’ and “operations” but it represents a set of ideas and practices much larger than those two terms alone, or together.
