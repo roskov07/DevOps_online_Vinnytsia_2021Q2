@@ -1,0 +1,15 @@
+fe76bb6 HEAD@{0}: merge develop: Fast-forward
+d46f2aa HEAD@{1}: checkout: moving from develop to main
+fe76bb6 HEAD@{2}: commit (merge): Resolve merge conflict
+857bbdc HEAD@{3}: merge images: Fast-forward
+9f5db37 HEAD@{4}: checkout: moving from styles to develop
+50abf9b HEAD@{5}: commit: Changing my index.html
+2b4eefd HEAD@{6}: commit: Adding styles folder with styles source inside it
+9f5db37 HEAD@{7}: checkout: moving from develop to styles
+9f5db37 HEAD@{8}: checkout: moving from images to develop
+857bbdc HEAD@{9}: commit: Changing my index.html. Adding images source inside it
+9f5db37 HEAD@{10}: checkout: moving from develop to images
+9f5db37 HEAD@{11}: commit: Creating empty index.html file
+d46f2aa HEAD@{12}: checkout: moving from main to develop
+d46f2aa HEAD@{13}: commit: Creating empty readme.txt file
+d91cdba HEAD@{14}: clone: from git@github.com:rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2.git
