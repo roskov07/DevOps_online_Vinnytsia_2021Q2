@@ -1,38 +1,17 @@
-## PART 1. HYPERVISORS
-1. What are the most popular hypervisors for infrastructure virtualization?
+## Task2.2 AWS
 
-The most popular hypervisors for infrastructure virtualization are VMware Workstation, Oracle VM VirtualBox, Microsoft Hyper-V, VMware ESX Server.
-
-2. Briefly describe the main differences of the most popular hypervisors.
-
-The main differences are that Type 1 hypervisors run as a control program directly on the hardware side of the computer. Virtual machine operating
-systems run higher. In turn, Type 2 hypervisors run on the host operating system. Guest virtual machine operating systems are at a higher level. There is also Type 3 (Monolithic) and Type 4 (Microkernel). The monolithic hypervisor includes hardware device drivers (hardware virtualization).
-In the case of microkernel, device drivers are located inside the host operating system. 
-
-
-
-## PART 2. VirtualBox 
-I've installed VirtualBox 6.1 on my PC. My operation system is Windows 10. After I downloaded the Ubuntu Server 18.04 from
-the official site. In the next steps you can read the description of my actions with VirtualBox:
-
-1. Creating VM1 and cloning an existing VM1 by creating a VM2 - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/creating_png.png)
-
-2. I сreated a group for several VM . For VM1, I changed its state, took several different snapshots, formed a branched
-tree of snapshots - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/snap_image.png)
-3. Exporting VM1. Saving the .ova file to disk. Importing VM from .ova file - [image_link1](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/image_1.8.png), [image_link2](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/image.png)
-4. Configuring virtual machines VM1(192.168.56.103) and VM2(192.168.56.104) for local access to each other, but without Internet access. For this, I selected the "Host-only adapter " network mode - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/local_ip_settings.png)
-5. Configuring virtual machines for Internet access, for this I chose "Bridged networking" network mode - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/bridge_settings.png)
-6. Working with CLI through VBoxManage. Executing the basic commands of VBoxManage list,
-showvminfo, createvm, startvm, modifyvm, clonevm, snapshot, controlvm - [image_link1](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/cli_list.png), [image_link2](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/vm_cl2.png), [image_link3](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/vm_cli1.png)
-
-## PART 3. Vagrant
-I downloaded the required version of Vagrant according to the instructions and
-according to the host operating system (OS).
-1. After creating work folder and initializing the environment I ran a command "vagrant up" - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/vagrant_up_1.png)
-2. Connecting to the VM using the program PuTTY - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/vagrant_up_1.png)
-3. Recording the date and time by executing the "date" command - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/vagrant_date.png)
-4. Stopping and deleting the created VM - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/vagrant_destroy.png)
-5. Creating and running my Vagrant box - [vagrantfile](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/vagrant_file.png), [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.1/images/own_vagrant_box_.png)
+1. I have registered my account in AWS under the name "stal23797". Next step I launched a Linux Virtual Machine with Amazon Lightsail - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image_4.png)
+2. Launching another Linux Virtual Machine without Amazon Lightsail - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image5.png)
+3. Creating a snapshot of my instance - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image6.png)
+4. Creating and attaching a Disk_D (EBS) to my instance - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image7.png) [image_link2](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image7_1.png)
+5. Launching the next instance from backup, name of instance - "ins_from_ami2"  - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image8.png) [image_link1](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image8.1.png)
+6. Detaching Disk_D from the 2nd instance and attaching disk_D to the new instance(ins_from_ami2)[image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image9.png)
+7. Launching and configuring a WordPress instance with Amazon Lightsail - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image10_1.png) [image_link1](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image10.2.png)
+8. S3 - Storinf and Retrieving files in my bucket "bucket-kozlov-1"- [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image11.1.png) [image_link1](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image11.2.png)
+9. Creating a user AWS IAM, configuring CLI AWS and uploading any files to S3 - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image12.1.png) [image_link1](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image12.2.png) [image_link2](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image12.3.png) [image_link3](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image12.4.png)
+10. Deploying Docker Containers on Amazon ECS, creating a cluster(ECS-kozlovtest-cluster), and runing container with nginx - [image_link](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image14.1.png) [image_link1](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image14.2.png) [image_link2](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image14.3.png) [image_link3](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image14.4.png)
+11. Creating a static website on Amazon S3. For this task, I registered the domain testkozlov.pp.ua at nic.ua. I also directed the domain to the Amazon nameservers and did the adding of the A record using Route 53. [image_link1](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image15.1.png) [image_link2](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image15.2.png) [image_link3](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m2/task2.2/images/image15.3.png) 
+My static website looks like this: http://testkozlov.pp.ua 
 
 ## Conclusion
-As a result of the work, I can say that I learned creating VM in VirtualBox and Vagrant, configuring various parameters, network parameters and much more. Also I learned types of hypervisors and how the hypervisors work.
+As a result of the work, I can say that I learned how to use AWS services like EC2, IAM, S3, ROUTE 53, ECS.
