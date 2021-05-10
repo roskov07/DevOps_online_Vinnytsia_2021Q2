@@ -852,7 +852,7 @@ Part2.
 
 1. - 
 2. I disabled Server SSH Root Login in file /etc/ssh/sshd_config. image1, image2. Also I changed ssh-port to 41111.
-3. Three ways to generate ssh-keys:
+3. Three ways to generate ssh-keys, what I have used
 4. Implement port forwarding for the SSH client from the host machine to the guest Linux
 virtual machine behind NAT. 
 
