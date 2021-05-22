@@ -1,35 +1,39 @@
-## TASK 6.1
+## TASK 4.1
 
-1. Create virtual machines connection according to figure 1.
+1. Зібрати наступний проект (рис 1), який містить в собі: 4 ПК типу PCPT, Концентратор (Hub-PT). Кожен комп'ютер повинен бути з'єднаний з
+концентратором за допомогою крученої пари (Copper Straight-through).
 
-I created firs virtual machine (VM1) that has 2 interfaces (NAT and internal), network config file of machine - [image1](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m6/task6.1/image/config_vm1.png)
-And I created second virtual machine (VM2) that has one interface (internal), network config file of machine - [image2](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m6/task6.1/image/config_vm2.png)
+Результат на скриншоті - [image1](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m4/task4.1/image/image1.png)
 
-2. VM2 has one interface (internal), VM1 has 2 interfaces (NAT and internal). Configure all network
-interfaces in order to make VM2 has an access to the Internet (iptables, forward, masquerade).
+7. Переглянути інформацію о пакетах з вікна Simulation Panel і їх
+відповідність моделі OSI шляхом подвійного клацання по пакету в вікні. 
 
-I configured network between virtual machines according to the task and got the next result - [image1](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m6/task6.1/image/6.2.png)
+Результат на скриншотах - [image2](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m4/task4.1/image/image2.png), [image3](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m4/task4.1/image/image3.png)
 
-3. Check the route from VM2 to Host.
+9. Зібрати наступний проект (рис. 5). У нього входять: PC0-PC5, Server,
+2 Hubs. Однойменні пристрої з'єднуються за допомогою кросового кабелю
+(Copper Cross-over).
 
-In this case is implementening next command - [image3](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m6/task6.1/image/6.3.png)
+Результат на скриншоті - [image4](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m4/task4.1/image/image5.png)
 
-4. Check the access to the Internet, (just ping, for example, 8.8.8.8).
+12. Створити новий проект, який включає в себе: 4 ПК типу PC-PT,
+Комутатор (Switch). Кожен комп'ютер повинен бути з'єднаний з
+концентратором за допомогою крученої пари (Copper Straight-through) (рис.
+6).
 
-Checking the access to the Internet - [image4](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m6/task6.1/image/6.4.png)
+Результат на скриншоті - [image5](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m4/task4.1/image/image6.png)
 
-5. Determine, which resource has an IP address 8.8.8.8.
+14. Розширити проект до такого вигляду (рис. 7). У нього входять: 8 ПК
+типу PC-PT, 2 комутатори (Switch). Кожен комп'ютер повинен бути з'єднаний
+з комутатором за допомогою крученої пари (Copper Straight-through),
+комутатори між собою з'єднуються за допомогою кросового кабелю (Copper
+Cross-over).
 
-Determining, which resource has an IP address 8.8.8.8 - [image5](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m6/task6.1/image/6.5.png)
+Результат на скриншоті - [image6](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m4/task4.1/image/image8.png)
 
-6. Determine, which IP address belongs to resource epam.com.
+18. Існуючу мережу розбити на дві рівні підмережі. І з'єднати їх за
+допомогою маршрутизатора Router-PT з декількома портами (рис. 8).
+Маршрутизатор і комутатори з'єднати між собою за допомогою оптоволокна
+(Fiber).
 
-Determining, which IP address belongs to resource epam.com - [image6](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m6/task6.1/image/6.6.png)
-
-7. Determine the default gateway for your HOST and display routing table.
-
-Determining the default gateway for my HOST and displaying routing table(in windows it is 'print route' command) - [image7.1](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m6/task6.1/image/6.7.1.png),[image7.2](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m6/task6.1/image/6.7.2.png)
-
-8. Trace the route to google.com.
-
-Tracing the route to google.com - [image8](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m6/task6.1/image/6.8.png)
+Результат на скриншоті - [image7](https://github.com/rostislavkozlov07/DevOps_online_Vinnytsia_2021Q2/blob/main/m4/task4.1/image/image7.png)
